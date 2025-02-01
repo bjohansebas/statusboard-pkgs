@@ -18,6 +18,9 @@ class ProjectList extends LitElement {
         ${this.projects.map((project) => html`
           <tr>
             <td>
+              ${project.type}
+            </td>
+            <td>
               <a href="https://www.github.com/${project.repoOwner}" target="_blank">${project.repoOwner}</a>
               / <a href="${(project.repoDetails && project.repoDetails.url) || `https://www.github.com/${project.repoOwner}/${project.repoName}`}" target="_blank">${project.repoName}</a>
             </td>

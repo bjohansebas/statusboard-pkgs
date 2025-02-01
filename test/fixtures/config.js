@@ -12,15 +12,16 @@ module.exports = {
   title: 'StatusBoard Test',
   description: 'A test for StatusBoard',
 
-  orgs: [
-    'pkgjs'
-  ],
+  // orgs: [
+  //   'pkgjs'
+  // ],
 
   projects: [
     'nodejs/package-maintenance',
     {
-      name: 'Express StatusBoard',
-      repo: 'expressjs/statusboard'
+      name: 'StatusBoard',
+      repo: 'pkgjs/statusboard',
+      type: 'discussion'
     }
   ],
 
